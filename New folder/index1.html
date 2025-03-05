@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox Image Gallery - Easy Tutorials</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<center>
+    <h1>Image  Gallery</h1>
+</center>
+   
+    <div class="full-img" id="fullimgbox">
+        <img src="1.jpg"  id="fullImg">
+        <span onclick="CloseImg()">X</span>
+    </div>
+   
+    <div class="img-gallery">
+    <img src="1.jpg" height="400" onclick="openfullimg(this.src)">
+   
+    <img src="2.jpg" height="400" onclick="openfullimg(this.src)" >
+    <img src="3.jpg" height="400" onclick="openfullimg(this.src)">
+    <img src="4.jpg" height="400"onclick="openfullimg(this.src)" >
+    <img src="5.jpg"  height="400"onclick="openfullimg(this.src)">
+    <img src="7.jpg"   height="400"onclick="openfullimg(this.src)">
+    <img src="OIP (1).jpg" height="400" onclick="openfullimg(this.src)">
+    <img src="OIP.jpg" height="400" onclick="openfullimg(this.src)">
+    </div>
+
+
+
+   </div> 
+</body>
+<script>
+    var fullimgbox = document.getElementById("fullimgbox");
+    var fullImg=document.getElementById("fullImg");
+
+    function openfullimg(pic) {
+        fullimgbox.style.display="flex";
+        fullImg.src=pic;
+
+    }
+    function CloseImg(){
+        fullimgbox.style.display="none";
+    }
+    
+</script>
+</html> 
